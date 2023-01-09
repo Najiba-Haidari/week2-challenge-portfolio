@@ -47,7 +47,7 @@ attached.
 ![Najiba Haidari's Portfolio](./Assets/images/screenshot.jpeg) "Najiba's Portfolio")
 
 ## URL of Github Repository
-
+ https://najiba-haidari.github.io/week2-challenge-portfolio/
 
 
 ## Credits
