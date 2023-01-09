@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    background-color: rgb(38, 138, 100);
+    height: 320px;
+    
+}
+.name {
+    background-color: rgb(188, 209, 188);
+    box-shadow: 8px 8px rgba(74, 64, 64, 0.4);
+    border-radius: 10px;
+   
+}
+p {
+    line-height: 20px;
+    text-align: justify;
+}
+.title img, figcaption{
+    padding: 10px;
+}
+section{
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+nav ul li {
+   list-style-type: none;
+   display: inline-block;
+    
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    font-size: larger;
+    
+}
+.name {
+    float: left;
+}
+.links {
+    float: right;
+}
+.subtitle {
+    height: 180px;
+    background-image: url(../images/coding.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:white;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 60px;
+}
+.container {
+    position: relative;
+}
+.container .text{
+  position: absolute;
+}
+
+.about-me h3, .container-main h3, footer h3{
+    float: left;
+    width: 25%;
+    height: auto;
+    font-size: 40px;
+    text-align:right;
+    clear:both;
+    margin-bottom: 10px;
+    margin-top: 40px;
+    margin-left: 10px;
+
+}
+.about-me .container, .container-main .container-box, footer ul {
+    float: right; 
+    width: 70%;
+    padding: 15px;
+    border-left: 5px solid grey;
+    margin-top: 15px;
+
+}
+.about-me .container, footer ul{
+    height: 200px;
+}
+.container-main{
+    height: 600px;
+}
+
+.container{
+    position: relative;
+    flex: 1 1 auto;
+}
+.container .container-title {
+    position: absolute;
+    top: 70px;
+    left: 10px;
+    color: white;
+    padding: 20px;
+    font-weight: bolder;
+    background-color: purple; 
+ }
+.standard-image{
+    width: 100%;
+    height: 150px;
+    border: 10px solid lightseagreen;
+    opacity: 0.7;
+    /* object-fit: cover; */
+    /* margin: 1px; */
+}
+.standard-image:hover{
+    opacity: 1;
+}
+   
+.container-box {
+    display: flex;
+    flex-wrap: wrap;   
+    flex-direction: row;
+    gap: 1px;
+    justify-content: space-between;
+}
+.one:first-child {
+    width: 100% !important;
+   height: auto;
+}
+
+.one .standard-image{
+    height: 270px;
+}
+
+footer ul{
+    height:150px ;
+}
+
+footer ul li{
+    display: inline-block;
+   
+
+}
+footer ul li a{
+    text-decoration: none;
+    padding-bottom: 5px;
+  
+    border-bottom: 3px solid green ;
+    margin-right: 20px;
+   line-height: 40px;
+}
+
+@media (max-width:800px) {
+    .container-box{
+        flex-direction: column;
+    }
+}
